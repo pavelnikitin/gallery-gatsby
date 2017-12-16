@@ -1,0 +1,105 @@
+
+
+html {
+  font-size: 16px; }
+
+body {
+  font-size: 100%; }
+
+.gallery-container {
+  background-color: rgb(26, 24, 24);
+  margin-top: 25vh;
+  margin-bottom: 15vh;
+ }
+
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 1.875rem; }
+
+.gallery-thumbnail {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px; }
+
+.ion-search {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: all 0.25s ease-in-out; }
+  .ion-search:focus, .ion-search:hover {
+    color: #111; }
+
+.gallery-thumbnail:focus ~ .ion-search,
+.gallery-thumbnail:hover ~ .ion-search,
+.gallery-thumbnail ~ .ion-search:focus,
+.gallery-thumbnail ~ .ion-search:hover {
+  opacity: 1; }
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  z-index: 20;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(21, 21, 21, 0.75); }
+
+.modal-body {
+  width: 57%;
+  overflow: hidden;
+  margin: 3.5vh auto;
+  padding-bottom: 35px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+   }
+
+@media (max-width: 810px) {
+  .modal-body {
+    width: 85%;
+    margin:14vh auto;
+  }
+}
+ 
+.img-responsive {
+  min-width: 100%;
+}
+
+.modal-close {
+  width: 16px;
+  height: 16px;
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  font-size: 1.5rem;
+  color: #fff;
+  transition: all 0.25s ease-in-out; }
+  .modal-close:focus, .modal-close:hover {
+    color: #111; }
+
+.ion-chevron-left, .ion-chevron-right {
+
+  width: 16px;
+  height: 16px;
+  position: fixed;
+  top: 50px;
+  font-size: 1.4rem;
+  color: #fff;
+  transition: all 0.25s ease-in-out; }
+  .ion-chevron-left:focus,.ion-chevron-right:focus,.ion-chevron-left:hover,.ion-chevron-right:hover {
+    color: #111; 
+
+}
+
+.ion-chevron-left {
+  left: 12px;
+}
+
+.ion-chevron-right {
+  right: 12px;
+}
