@@ -7,6 +7,9 @@ import GalleryImage from '../components/GalleryImage'
 import NavLeft from '../components/NavLeft'
 import NavRight from '../components/NavRight'
 import GalleryModal from '../components/GalleryModal'
+import { slide as Menu } from 'react-burger-menu'
+
+
 
 
 
@@ -29,6 +32,7 @@ let imgUrls = [
 
 class IndexPage extends React.Component {
 
+
   constructor(props) {
     super(props);
 
@@ -43,6 +47,11 @@ class IndexPage extends React.Component {
     this.closeModal = this.closeModal.bind(this);
     this.handlePhotoNavClick = this.handlePhotoNavClick.bind(this);
       
+  }
+
+  showSettings (event) {
+    event.preventDefault();
+  
   }
 
    // Открытие модального окна
@@ -87,6 +96,13 @@ class IndexPage extends React.Component {
     }
 
     return (
+    <div>
+    <Menu>
+    <a id="home" className="menu-item" href="/">Home</a>
+    <a id="about" className="menu-item" href="/about">About</a>
+    <a id="contact" className="menu-item" href="/contact">Contact</a>
+    <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
+  </Menu>
       <div className='container-fluid gallery-container'>
         <div className='row'>
           {imgUrls.map((url, Index) => {
@@ -109,7 +125,7 @@ class IndexPage extends React.Component {
             <NavRight onClick={(e,delta) => this.handlePhotoNavClick(e, 1)}></NavRight>
         </GalleryModal> 
       </div>
-      
+    </div>
     )
   }
 

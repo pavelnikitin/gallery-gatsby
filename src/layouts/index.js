@@ -15,12 +15,9 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <div>
-      <div className="menu">
-        <div className="logo">Фотогалерея</div>
-        <div className="menu-list hidden-xs">
-        </div>
-        <div className="clear"></div>
-      </div>
+      
+     
+        
       {children()}
       <div className="footer">
         <div className="container">

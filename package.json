@@ -10,6 +10,7 @@
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-sass": "^1.0.14",
     "node-sass": "^4.7.2",
+    "react-burger-menu": "^2.1.11",
     "react-responsive-carousel": "^3.1.30",
     "wow.js": "^1.2.2",
     "wowjs": "^1.1.3"
