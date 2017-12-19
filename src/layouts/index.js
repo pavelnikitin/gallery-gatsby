@@ -15,9 +15,13 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <div>
-      
-     
-        
+    <div className="container-fluid">
+        <div className="row">
+           <div className="header col-xs-12 text-center">
+              <h1 >Фотогалерея</h1> 
+           </div>
+        </div>
+    </div>     
       {children()}
       <div className="footer">
         <div className="container">

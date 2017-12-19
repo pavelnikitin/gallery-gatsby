@@ -8,19 +8,26 @@ html {
 body {
   font-size: 100%; }
 
-  .logo {
-    font-family: 'Lobster', cursive;
-    font-size: 30px;
+  .header {
+    font-family: 'Lobster', cursive, Arial, Helvetica, sans-serif;
+    height: 100px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 6;
   }
 
 .gallery-container {
   background-color: rgb(26, 24, 24);
+  margin-top: 100px;
+  min-height: 80vh;
  }
 
 .gallery-card {
   position: relative;
   overflow: hidden;
-  margin-bottom: 1.875rem; }
+  margin-bottom: 1.875rem;
+  margin-top: 1.875rem;
+ }
 
 .gallery-thumbnail {
   max-width: 100%;
@@ -50,7 +57,7 @@ body {
 .modal-overlay {
   position: fixed;
   top: 0; left: 0; bottom: 0; right: 0;
-  z-index: 20;
+  z-index: 10;
   width: 100vw;
   height: 100vh;
   background: rgba(21, 21, 21, 0.75); }

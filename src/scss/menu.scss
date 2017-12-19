@@ -1,48 +1,65 @@
-/* Position and sizing of burger button */
+/* Позиция и размер кнопки бургер-меню */
 .bm-burger-button {
     position: fixed;
-    width: 36px;
-    height: 30px;
+    z-index: 10 !important;
+    width: 26px;
+    height: 20px;
     left: 36px;
     top: 36px;
+    cursor: pointer;
   }
   
-  /* Color/shape of burger icon bars */
+  /* Цвет и форма полосок конпки */
   .bm-burger-bars {
-    background: #373a47;
+    background: rgb(31, 31, 30);
+    
   }
   
-  /* Position and sizing of clickable cross button */
+  /* Позиция и размеры кнопки "закрыть меню" */
   .bm-cross-button {
     height: 24px;
     width: 24px;
+    right: 50px !important;
   }
   
-  /* Color/shape of close button cross */
+  /* Цвет иконки кнопки "закрыть меню" */
   .bm-cross {
-    background: #bdc3c7;
-  }
-  
-  /* General sidebar styles */
-  .bm-menu {
-    background: #373a47;
-    padding: 2.5em 1.5em 0;
-    font-size: 1.15em;
+    background: rgb(255, 255, 255);
+    
   }
 
   
-  /* Morph shape necessary with bubble or elastic */
+  
+  /* Основные стили меню */
+  .bm-menu {
+    z-index: 40 !important;
+    background: rgba(24, 23, 23, 0.7);
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+    width: 250px;
+    a {
+      color: rgb(173, 165, 165);
+      padding-left: 27px;
+      padding-top: 20px;
+      text-decoration: none;
+      &:hover, &:focus {
+        color: rgb(255, 255, 255);
+      }
+    }
+  }
+
+
   .bm-morph-shape {
     fill: #373a47;
   }
   
-  /* Wrapper for item list */
+  /* Контейнер списка меню */
   .bm-item-list {
     color: #b8b7ad;
     padding: 0.8em;
   }
   
-  /* Styling of overlay */
+  /* Стиль overlay */
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
   }
