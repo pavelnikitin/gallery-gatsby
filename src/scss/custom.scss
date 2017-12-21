@@ -1,13 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 
-
+/* Общие стили */
 html {
   font-size: 16px; }
 
 body {
   font-size: 100%; }
 
+
+/* Шапка страницы */
   .header {
     font-family: 'Lobster', cursive, Arial, Helvetica, sans-serif;
     height: 100px;
@@ -15,7 +17,7 @@ body {
     position: fixed;
     z-index: 6;
   }
-
+/* Основные элементы галереи */
 .gallery-container {
   background-color: rgb(26, 24, 24);
   margin-top: 100px;
@@ -33,7 +35,7 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 4px; }
-
+/* Иконка увеличить */
 .ion-search {
   display: block;
   position: absolute;
@@ -53,7 +55,7 @@ body {
 .gallery-thumbnail ~ .ion-search:focus,
 .gallery-thumbnail ~ .ion-search:hover {
   opacity: 1; }
-
+/* Фон вокруг фото при увеличении */
 .modal-overlay {
   position: fixed;
   top: 0; left: 0; bottom: 0; right: 0;
@@ -61,7 +63,7 @@ body {
   width: 100vw;
   height: 100vh;
   background: rgba(21, 21, 21, 0.75); }
-
+/* Увеличенное фото */
 .modal-body {
   width: 57%;
   overflow: hidden;
@@ -81,7 +83,7 @@ body {
 .img-responsive {
   min-width: 100%;
 }
-
+/* Иконка закрыть фото */
 .modal-close {
   width: 16px;
   height: 16px;
@@ -93,7 +95,7 @@ body {
   transition: all 0.25s ease-in-out; }
   .modal-close:focus, .modal-close:hover {
     color: #111; }
-
+/* Иконки навигации */
 .ion-chevron-left, .ion-chevron-right {
 
   width: 16px;
@@ -114,4 +116,8 @@ body {
 
 .ion-chevron-right {
   right: 12px;
+}
+/* Подвал страницы */
+.footer {
+  height: 150px;
 }

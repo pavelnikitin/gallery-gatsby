@@ -13,7 +13,7 @@ import { slide as Menu } from 'react-burger-menu'
 
 
 
-let imgUrls = [
+let fotos = [
 
   
   {id: 1,
@@ -103,7 +103,7 @@ class IndexPage extends React.Component {
       showModal: false,
       url: '',
       fullScreenPhotoIndex: 0,
-      displayedFotos: imgUrls
+      displayedFotos: fotos
     }
 
     this.openModal = this.openModal.bind(this);
@@ -152,10 +152,10 @@ class IndexPage extends React.Component {
     e.preventDefault();
     if (gamma !== 'all') {
     
-    var displayedFotos = imgUrls.filter((item) => {
+    var displayedFotos = fotos.filter((item) => {
         return item.category == gamma;
     });
-  } else  {displayedFotos = imgUrls};
+  } else  {displayedFotos = fotos};
 
     this.setState({displayedFotos: displayedFotos});
   }

@@ -23,24 +23,11 @@ const TemplateWrapper = ({ children }) => (
         </div>
     </div>     
       {children()}
-      <div className="footer">
-        <div className="container">
-          <div className="row centered">
-            <h2>You Can Contact Us</h2>
-            <h5>HELLO@LANDINGSUMO.COM</h5>
-
-            <p className="mt">
-              <a href="#"><i className="ion-social-twitter"></i></a>
-              <a href="#"><i className="ion-social-dribbble"></i></a>
-              <a href="#"><i className="ion-social-instagram"></i></a>
-              <a href="#"><i className="ion-social-facebook"></i></a>
-              <a href="#"><i className="ion-social-pinterest"></i></a>
-              <a href="#"><i className="ion-social-tumblr"></i></a>
-            </p>
-            <h6 className="mt">COPYRIGHT 2014 - LANDING SUMO</h6>
-          </div>
-        </div>
+      <div className="row">
+      <div className="footer col-xs-12 text-center">
+         <h3 >Copyright©2017</h3> 
       </div>
+   </div>
     </div>
   </div>
 )
