@@ -1,13 +1,33 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import appStoreImg from '../img/app-store.png'
-import googlePlayImg from '../img/google-play.png'
-import phoneImg from '../img/phone.png'
 import GalleryImage from '../components/GalleryImage'
 import NavLeft from '../components/NavLeft'
 import NavRight from '../components/NavRight'
 import GalleryModal from '../components/GalleryModal'
 import { slide as Menu } from 'react-burger-menu'
+import girl1 from '../img/girl1.png'
+import girl2 from '../img/girl2.png'
+import girl3 from '../img/girl3.png'
+import girl4 from '../img/girl4.png'
+import girl5 from '../img/girl5.png'
+import girl6 from '../img/girl6.png'
+import car1 from '../img/car1.png'
+import car2 from '../img/car2.png'
+import car3 from '../img/car3.png'
+import car4 from '../img/car4.png'
+import car5 from '../img/car5.png'
+import car6 from '../img/car6.png'
+import animal1 from '../img/animal1.png'
+import animal2 from '../img/animal2.png'
+import animal3 from '../img/animal3.png'
+import animal4 from '../img/animal4.png'
+import animal5 from '../img/animal5.png'
+import animal6 from '../img/animal6.png'
+
+
+
+
+
 
 
 
@@ -18,75 +38,75 @@ let fotos = [
   
   {id: 1,
     category: 'girls',
-    url:'https://www.motto.net.ua/pic/201209/800x600/motto.net.ua-23658.jpg'
+    url: girl1
   },
   {id: 2,
     category:'auto',
-    url:'http://deswal.ru/cars/lamborghini/800-600/00000099.jpg'
+    url: car1
   }, 
   { id: 3,
     category: 'animals',
-    url:'https://econet.ru/uploads/pictures/119697/content_10__econet_ru.jpg'
+    url: animal1
   },
   { id: 4,
     category: 'animals',
-    url:'http://www.pavelin.ru/images/stories/leopard/leo_011.jpg'
+    url: animal2
   },
   { id: 5,
     category: 'girls',
-    url:'http://luxfon.com/pic/201208/800x600/luxfon.com-16378.jpg'
+    url: girl2
   },
   { id: 6,
     category: 'animals',
-    url:'https://www.motto.net.ua/pic/201210/800x600/motto.net.ua-43652.jpg'
+    url: animal3
   },
   { id: 7,
     category: 'animals',
-    url:'https://avatars.mds.yandex.net/get-pdb/199965/e0004e4e-d1fd-4fff-8fb9-f4312662af08/s800'
+    url: animal4
   },
   {id: 8,
     category: 'girls',
-    url:'http://luxfon.com/pic/201211/800x600/luxfon.com-17656.jpg'
+    url: girl3
   },
   { id: 9,
     category: 'animals',
-    url:'http://mypresentation.ru/documents/884219c23e6888b602805f0674eeb70e/img37.jpg'
+    url: animal5
   },
   {id: 10,
     category: 'girls',
-    url:'http://akak.ru/steps/pictures/000/077/341_large.jpg'
+    url: girl4
   },
   {id: 11,
     category: 'girls',
-    url:'http://img.desktopwallpapers.ru/women/pics/6e78334bca1eb1f89ab15.jpg'
+    url: girl5
   },
   {id: 12,
     category: 'auto',
-    url:'http://acrosscars.com/uploads/fotos/2015-fnr_concept6.jpg'
+    url: car2
   },
   {id: 13,
     category: 'auto',
-    url:'https://img.day.az/clickable/00/0/354223_004.jpg'
+    url: car3
   },
   {id: 14,
     category: 'girls',
-    url:'https://our-woman.ru/wp-content/uploads/2013/10/reWalls.com-36699.jpg'
+    url: girl6
   }, 
   {id: 15,
     category:'auto',
-    url:'https://4589861635b91edaa841-e4ddf20bbb131c4268e6018b2e3d1bb8.ssl.cf1.rackcdn.com/426850.jpg'
+    url: car4
   },
   { id: 16,
     category: 'auto',
-    url:'http://ij.drivenn.ru/jvrcgg1hl076q_1o0xzqe.jpeg'
+    url: car5
   },
   { id: 17,
     category: 'animals',
-    url:'http://www.setwalls.ru/pic/201305/800x600/setwalls.ru-50804.jpg'
+    url: animal6
   },
   {id: 18,
     category:'auto',
-    url:'http://carinpicture.com/wp-content/uploads/2012/08/Holden-Torana-TT36-Hatch-Concept-2004-Photo-04-800x600.jpg'
+    url: car6
   }
   
 ];

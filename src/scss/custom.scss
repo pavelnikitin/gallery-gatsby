@@ -14,6 +14,10 @@ body {
     font-family: 'Lobster', cursive, Arial, Helvetica, sans-serif;
     height: 100px;
     background-color: #fff;
+    background-image: url(../img/leaves.png),url(../img/leaves1.png),url(../img/leaves2.png);
+    background-repeat: no-repeat;
+    background-size: 5%,7%,10%;
+    background-position: 20% 0, 60% 70px, 90% 30px;
     position: fixed;
     z-index: 6;
   }
@@ -94,7 +98,10 @@ body {
   color: #fff;
   transition: all 0.25s ease-in-out; }
   .modal-close:focus, .modal-close:hover {
-    color: #111; }
+    color: #111;
+    cursor: pointer;
+  }
+
 /* Иконки навигации */
 .ion-chevron-left, .ion-chevron-right {
 
@@ -107,11 +114,12 @@ body {
   transition: all 0.25s ease-in-out; }
   .ion-chevron-left:focus,.ion-chevron-right:focus,.ion-chevron-left:hover,.ion-chevron-right:hover {
     color: #111; 
+    cursor: pointer;
 
 }
 
 .ion-chevron-left {
-  left: 12px;
+  left: 12px; 
 }
 
 .ion-chevron-right {
@@ -120,4 +128,10 @@ body {
 /* Подвал страницы */
 .footer {
   height: 150px;
+  background-image: url(../img/leaves.jpg);
+  background-repeat: repeat-x;
+  background-position: 0 90px;
+  h3 {
+    margin-top: 60px;
+  }
 }
